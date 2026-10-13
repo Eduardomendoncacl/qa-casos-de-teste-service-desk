@@ -27,4 +27,4 @@
 * **Pass** 
 
 ### Evidência
-![Validação de E-mail Inexistente](./CT-001-login.png)
+![Validação de E-mail Inexistente](../bug-reports/evidencias/CT-001-login.png)
