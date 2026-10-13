@@ -1,22 +1,30 @@
-# CT-001 - Login no Sistema de Chamados
+# CT-001 - Autenticação no Sistema de E-mail (Google Workspace)
 
-**Funcionalidade:** Autenticação
-**Prioridade:** Alta
-**Tipo:** Funcional
+**Funcionalidade:** Autenticação / Login  
+**Prioridade:** Alta  
+**Tipo:** Funcional (Cenário Negativo)  
 
-**Pré-condição:** Usuário cadastrado no AD com acesso ao GLPI
 
-**Passos:**
-1. Acessar http://sistema-chamados.local/login
-2. Informar usuário: suporte.teste@empresa.com
-3. Informar senha: Teste@123
-4. Clicar em Entrar
+### Pré-condição
+* Acesso à página inicial de login do Google (`https://accounts.google.com`).
 
-**Resultado Esperado:** 
-Usuário deve ser redirecionado para Dashboard / Meus Chamados, exibindo nome do usuário logado.
 
-**Resultado Atual:** [Preencher após execução]
+### Passos
+1. Aceder ao endereço de login do serviço.
+2. Informar o e-mail não cadastrado ou incorreto no campo "E-mail ou telefone": `eduardodiasdjs@gmail.com`.
+3. Clicar no botão **Avançar**.
 
-**Status:** Pass / Fail
 
-**Evidência:** [link do print]
+### Resultado Esperado
+* O sistema deve impeditivamente barrar o avanço do utilizador e exibir a mensagem de erro: **"Não foi possível encontrar essa conta"**.
+
+
+### Resultado Atual
+* O sistema validou a inexistência da conta e exibiu a mensagem de erro conforme esperado.
+
+
+### Status
+* **Pass** 
+
+### Evidência
+![Validação de E-mail Inexistente](bug-reports/evidencias/CT-001-login.png)
